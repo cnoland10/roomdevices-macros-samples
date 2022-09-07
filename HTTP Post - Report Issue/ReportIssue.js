@@ -1,14 +1,14 @@
 const xapi = require('xapi');
 
 
-const SERVICE_NOW_INSTANCE_URL = 'yourinstance.service-now.com'; // Specify a URL to a service like serviceNow etc.
+const SERVICE_NOW_INSTANCE_URL = 'phillips66.service-now.com'; // Specify a URL to a service like serviceNow etc.
 
 const MONITORING_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/v1/table/incident'; // Specify a URL to a service like serviceNow etc.
 
 
 const CONTENT_TYPE = "Content-Type: application/json";
 const ACCEPT_TYPE = "Accept:application/json";
-const SERVICENOW_USERNAMEPWD_BASE64 = 'YWRtaW46Q2lzY28xMjM='; // format is "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
+const SERVICENOW_USERNAMEPWD_BASE64 = 'bm9sYW5jdDpCb29tc29vbjA0MTU='; // format is "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
 const SERVICENOW_AUTHTOKEN = "Authorization: Basic " + SERVICENOW_USERNAMEPWD_BASE64;
 
 var systemInfo = {
